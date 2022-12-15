@@ -3,13 +3,15 @@ import styles from './index.less';
 
 export default function Layout() {
   return (
-    <div className={styles.navs}>
+    <div className={styles.init}>
       <ul>
         <li>
           <Link to="echarts/echarts1">echarts1</Link>
         </li>
       </ul>
-        <Outlet />
+        <div className={styles.container}>
+            <Outlet />
+        </div>
     </div>
   );
 }
