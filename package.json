@@ -9,6 +9,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "antd": "^5.2.0",
     "echarts": "^5.4.1",
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.0",
