@@ -9,9 +9,6 @@ export default function Layout() {
                     <Link to="echarts/echarts1">echarts1</Link>
                 </li>
                 <li>
-                    <Link to="DPFjs/index">pdf</Link>
-                </li>
-                <li>
                     <Link to="classDemo/index">classDemo</Link>
                 </li>
             </ul>

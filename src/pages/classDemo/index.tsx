@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Button, Input } from 'antd';
+import { Input } from 'antd';
 
 
 class ClassDemo extends Component<any, any> {
