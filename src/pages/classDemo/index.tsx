@@ -1,38 +1,38 @@
-import { Component } from "react"
-import { Input } from 'antd';
+import {Component} from "react"
+import {Input} from 'antd';
 
 
 class ClassDemo extends Component<any, any> {
-    constructor(props: any) {
-        super(props)
-        this.state = {
-            name: "张三"
-        }
+  constructor(props: any) {
+    super(props)
+    this.state = {
+      name: "张三"
+    }
+  }
+
+  inputDom = () => {
+
+    const inputChangeFn = (value: any) => {
+      this.setState({
+        name: value.target.value
+      })
     }
 
-    inputDom = () => {
 
-        const inputChangeFn = (value: any) => {
-            this.setState({
-                name: value.target.value
-            })
-        }
+    return (
+      <Input onChange={inputChangeFn}/>
+    )
+  }
 
-
-        return (
-            <Input onChange={inputChangeFn}/>
-        )
-    }
-
-    render() {
-        const { name } = this.state
-        return (
-            <div>
-                {this.inputDom()}
-                <p>{name}</p>
-            </div>
-        )
-    }
+  render() {
+    const {name} = this.state
+    return (
+      <div>
+        {this.inputDom()}
+        <p>{name}</p>
+      </div>
+    )
+  }
 }
 
 export default ClassDemo
